@@ -3,10 +3,10 @@
 class Database {
   constructor() {}
 
-  async getAll() {
+  async getAll(collection:string) {
 
   }
-  async getById() {
+  async getById(collection:string, id: string | number) {
 
   }
 

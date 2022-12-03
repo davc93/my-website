@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { ProductCard } from '../../components/ProductCard'
-import { useGetProducts } from '../../hooks/useGetProducts'
-import { Product } from '../../models/product.model'
+import { ProductCard } from '../../components/ProjectCard'
+import { useGetProducts } from '../../hooks/useGetProjects'
+import { Project } from '../../models/project.model'
 import styles from '../../styles/Home.module.css'
 
 
@@ -16,7 +16,7 @@ export default function Products() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-          {products.map((product:Product)=>{
+          {products.map((product:Project)=>{
             return (
               <ProductCard {...product} />
             )

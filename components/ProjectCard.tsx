@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Product } from '../models/product.model'
+import { Project } from '../models/project.model'
 
-export const ProductCard = ({title, price , description, images }:Product) => {
+export const ProductCard = ({title, price , description, images }:Project) => {
   return (
     <div className='product-card'>
         <Link href={`/product/${title}`}>
