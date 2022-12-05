@@ -20,6 +20,15 @@ const Service = () => {
 
       </Layout>
     )
+  } else{
+
+    return(
+      <Layout>
+        <p>Loading...</p>
+
+      </Layout>
+
+    )
   }
 
 }
