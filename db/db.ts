@@ -1,12 +1,20 @@
-
+import dummy from './data'
 
 class Database {
   constructor() {}
 
   async getAll(collection:string) {
+    const col = Object.keys(dummy).find((key)=>key==collection) as string
+    const data = dummy as any
+    return data[col]
+    
 
   }
-  async getById(collection:string, id: string | number) {
+  async getById(collection:string, id: string ) {
+    const col = Object.keys(dummy).find((key)=>key==collection) as string
+    const data = dummy as any
+  
+    return data[col][id]
 
   }
 
