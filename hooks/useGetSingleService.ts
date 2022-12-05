@@ -1,17 +1,28 @@
 import React from "react";
 
-export const useGetSingleProduct = () => {
-    const [product, setProduct] = React.useState({})
+
+const parseDescription = async (markdownUrl:string) => {
+    const response = await fetch(markdownUrl)
+    const markdown = await response.text()
+    return markdown
+}
+
+export const useGetSingleService = (id:any) => {
+    const [service, setService] = React.useState({})
     React.useEffect(() => {
-        const getSingleProduct = async () => {
-
-
-
-            setProduct(product)
+        const getSingleService = async () => {
+            const response = await fetch(`/api/services/${id}`)
+            const rawData = await response.json()
+            const description = await parseDescription(rawData.description)
+            const data = {
+                ...rawData,
+                description:description
+            }
+            setService(data)
         }
 
-        getSingleProduct()
+        getSingleService()
     })
-    return product
+    return service
 
 };

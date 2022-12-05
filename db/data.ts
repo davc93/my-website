@@ -1,6 +1,7 @@
 const services = [
   {
     id:1,
+    price:15000,
     name:"Landing page",
     path: "landing-page",
     discount: null,
@@ -17,7 +18,8 @@ const services = [
     name: "Web Site",
     discount: null,
     path: "web-site",
-    priceMonthly:18000
+    priceMonthly:18000,
+    price:8000
   },
 ];
 

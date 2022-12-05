@@ -41,7 +41,7 @@ export const Navbar = () => {
     setCheckHamburger(!checkHamburger)
   }
   const toggleDark = () => {
-    console.log('Toggle dark')
+    window.document.documentElement.classList.toggle('dark')
   }
 
   return (

@@ -8,6 +8,7 @@ specifiers:
   autoprefixer: ^10.4.13
   eslint: 8.29.0
   eslint-config-next: 13.0.6
+  markdown-to-jsx: ^7.1.8
   next: 13.0.6
   postcss: ^8.4.19
   react: 18.2.0
@@ -22,6 +23,7 @@ dependencies:
   '@types/react-dom': 18.0.9
   eslint: 8.29.0
   eslint-config-next: 13.0.6_s5ps7njkmjlaqajutnox5ntcla
+  markdown-to-jsx: 7.1.8_react@18.2.0
   next: 13.0.6_m5sxuueb27gk6ddc5gums6vtgq
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1542,6 +1544,15 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+    dev: false
+
+  /markdown-to-jsx/7.1.8_react@18.2.0:
+    resolution: {integrity: sha512-rRSa1aFmFnpDRFAhv5vIkWM4nPaoB9vnzIjuIKa1wGupfn2hdCNeaQHKpu4/muoc8n8J7yowjTP2oncA4/Rbgg==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /merge2/1.4.1:

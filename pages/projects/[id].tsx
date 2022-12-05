@@ -1,18 +1,27 @@
 import React from 'react'
-import {useRouter} from 'next/router'
-import { ProductDetail } from '../../components/ProjectDetail'
+import { useRouter } from 'next/router'
 import { Project } from '../../models/project.model'
-import { useGetSingleProduct } from '../../hooks/useGetSingleProject'
+import { useGetSingleProject } from '../../hooks/useGetSingleProject'
+import { ProjectDetail } from '../../components/ProjectDetail/'
+import { Layout } from '../../components/Layout'
 
-const Product = () => {
-    const router = useRouter()
-    const id = router.query.id as string
-    const product:Project | any = useGetSingleProduct()
-  return (
-    <main>
-        <ProductDetail {...product} />    
-    </main>
-  )
+const Project = () => {
+  const router = useRouter()
+  const id = router.query.id as string
+  const project: Project | any = useGetSingleProject(id)
+
+  if (project.techs) {
+
+    return (
+      <Layout>
+        <main className='p-4 lg:p-8'>
+          <ProjectDetail {...project} />
+        </main>
+
+      </Layout>
+    )
+  }
+
 }
 
 export default Project

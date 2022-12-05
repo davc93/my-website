@@ -1,17 +1,17 @@
 import React from "react";
 
-export const useGetProducts = () => {
-    const [products, setProducts] = React.useState([])
+export const useGetProjects = () => {
+    const [projects, setProjects] = React.useState([])
     React.useEffect(()=>{
         const getProductList =async () => {
-            const response = await fetch('/api/products')
+            const response = await fetch('/api/projects')
             const data = await response.json()
-            setProducts(data)
+            setProjects(data)
         }
         getProductList()
     })
 
     return {
-        products
+        projects
     }
 };

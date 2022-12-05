@@ -1,13 +1,14 @@
 export interface Project {
     id:                 number | string;
-    title:              string;
+    name:              string;
     description:        string;
     envLink:            string;
     repoLink:           string;
-    labels:             Label[];
+    featureImage:       string;
+    techs:             Tech[];
 }
 
-export interface Label {
+export interface Tech {
 
     id: number | string;
     name: string;

@@ -1,17 +1,20 @@
 import React from "react";
 
-export const useGetSingleProduct = () => {
-    const [product, setProduct] = React.useState({})
+export const useGetSingleProject = (id:any) => {
+    const [project, setProject] = React.useState({})
     React.useEffect(() => {
-        const getSingleProduct = async () => {
-
-
-
-            setProduct(product)
+        
+        const getSingleProject = async () => {
+        
+            const response = await fetch(`/api/projects/${id}`)
+            const data = await response.json()
+            
+            
+            setProject(data)
         }
 
-        getSingleProduct()
+        getSingleProject()
     })
-    return product
+    return project
 
 };
