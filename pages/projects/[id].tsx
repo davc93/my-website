@@ -20,6 +20,10 @@ const Project = () => {
 
       </Layout>
     )
+  } else {
+    return (
+      <p>Loading...</p>
+    )
   }
 
 }
