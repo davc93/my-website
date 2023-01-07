@@ -2,13 +2,13 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import { Project } from '../../models/project.model'
 import { useGetSingleProject } from '../../hooks/useGetSingleProject'
-import { ProjectDetail } from '../../components/ProjectDetail/'
+import { ProjectDetail } from '../../components/ProjectDetail'
 import { Layout } from '../../components/Layout'
 
 const Project = () => {
   const router = useRouter()
-  const id = router.query.id as string
-  const project: Project | any = useGetSingleProject(id)
+  const slug = router.query.slug as string
+  const project: Project | any = useGetSingleProject(slug)
 
   if (project.techs) {
 

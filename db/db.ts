@@ -10,11 +10,11 @@ class Database {
     
 
   }
-  async getById(collection:string, id: string ) {
+  async getById(collection:string, slug: string ) {
     const col = Object.keys(dummy).find((key)=>key==collection) as string
     const data = dummy as any
-  
-    return data[col][id]
+    const result = data[col].find((object:any)=> object["slug"]==slug)
+    return result
 
   }
 

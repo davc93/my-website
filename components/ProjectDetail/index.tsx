@@ -5,7 +5,7 @@ export const ProjectDetail = ({ title, description, images, repositoryLink, webA
 
     return (
       <article className='flex flex-col gap-8 items-center md:text-start text-center md:flex-row-reverse shadow-xl p-2 md:p-8'>
-        <img className="lg:w-96 lg:object-cover max-h-screen" src={images[0]} alt={title} />
+        <img className="lg:w-96 lg:object-cover max-h-screen" src={images[0] || '/not-available/2.svg' } alt={title} />
         <div className='lg:mb-24'>
           <div className='dark:text-white' >
             <Markdown>{description}</Markdown>

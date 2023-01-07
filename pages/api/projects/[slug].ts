@@ -12,8 +12,9 @@ export default async function handler(
   try {
 
     const db = new Database()
-    const id =  Number(req.query.id) - 1
-    const project = await db.getById('projects', id.toString() as string)
+    const slug =  req.query.slug
+    
+    const project = await db.getById('projects', slug as string)
     if(!project){
       throw new Error('hubo un error')
     }  

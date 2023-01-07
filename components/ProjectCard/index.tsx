@@ -4,14 +4,14 @@ import { Project } from '../../models/project.model'
 
 
 
-export const ProjectCard = ({ title, images, description,id }: Project) => {
+export const ProjectCard = ({ title, images, shortDescription,slug }: Project) => {
 
   return (
     <div className='project-card'>
-      <img src={images[0] || ''} alt={title} />
+      <img src={images[0] || '/not-available/2.svg'} alt={title} />
       <h3>{title}</h3>
-      <p>{description}</p>
-      <Link className='btn btn--primary' href={`/projects/${id}`}>More details</Link>
+      <p>{shortDescription}</p>
+      <Link className='btn btn--primary' href={`/projects/${slug}`}>More details</Link>
     </div>
   )
 }
