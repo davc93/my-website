@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { Route } from '../../models/route.model'
+import ActiveLink from '../ActiveLink'
 const routes: Route[] = [
   {
     name: 'About me',
@@ -19,12 +20,6 @@ const routes: Route[] = [
     path: '/projects',
     private: false,
     onlyPublic: false
-  },
-  {
-    name: 'Login',
-    path: '/login',
-    private: false,
-    onlyPublic: true
   },
   {
     name: 'Contact',
@@ -55,13 +50,13 @@ export const Navbar = () => {
             
             return (
               <li key={route.path}>
-                <Link
-
+                <ActiveLink
+                  activeClassName='link-active'
                   href={route.path}
-                  
+                  className='link'
                 >
                   {route.name}
-                </Link>
+                </ActiveLink>
               </li>
             )
           })}
