@@ -25,99 +25,65 @@ const services = [
 
 const projects = [
   {
-    id:1,
-    description:
-      "Fakestore is a product store where product logic and an infinite scroll must be implemented, it is part of a platzi laboratory where it is sought to put into practice what has been learned throughout a series of courses",
-    envLink: "https://davc93.github.io/laboratorio-fakestore/",
-    techs: [
-      {
-        name: "javascript",
-      },
-    ],
-    repoLink: "https://github.com/davc93/laboratorio-fakestore",
-    featureImage:
-      "https://firebasestorage.googleapis.com/v0/b/davc93.appspot.com/o/featuresImages%2Fthumb_laboratorio-fakestore.png?alt=media&token=376fc466-db08-4cfb-87d5-1fb7be0d797b",
-    name: "Fakestore lab",
+    "id": 1,
+    "title": "NodeJS Backend with Firebase Auth",
+    "description": "# NodeJS Backend with Firebase Auth\n\nThe following project is an implementation of the firebase authentication service in a backend made in NodeJS. This has a number of advantages, such as:\n\n- Have multiple authentication providers such as Google, Facebook, Github, Email, etc...\n - Manage users from the Firebase suite and use associated services such as notifications and emails\n- Have a system already tested and constantly improved by Google\n\n",
+    "techs": ["firebase", "nodejs", "express"],
+    "labels": ["backend", "nodejs", "firebase"],
+    "repositoryLink": "https://github.com/davc93/firebase-auth-middleware-for-nodejs",
+    "webAppLink": "",
+    "images": []
   },
   {
-    id:2,
-    featureImage:
-      "https://firebasestorage.googleapis.com/v0/b/davc93.appspot.com/o/featuresImages%2Fthumb_travels.png?alt=media&token=93347137-715a-457e-b1a9-1867c6fc4f42",
-    envLink: "https://davc93.github.io/travels/",
-    description:
-      'Find the most incredible destinations in the world on this landing page. The following project is the result of Platzi\'s course "Tailwindcss 2 and 3", where the full potential of this css framework is applied, which enhances productivity in page development.',
-    techs: [
-      {
-        name: "tailwind",
-      },
-    ],
-    repoLink: "https://github.com/davc93/travels",
-    name: "Travels",
+    "id": 2,
+    "title": "Mercadopago NodeJS Server with Typescript",
+    "description": "# Mercadopago NodeJS Server with Typescript\n\nMercadopago is a free market payment platform ,is present throughout Latin America.\n\nThe following implementation is the server that allows processing customer orders and obtaining a payment id to be later used to direct the user to the payment module within the site.\n\n## Features\n\n- Checkout within the same site\n- Fast payment and great shopping experience for users\n- Accept multiple payment methods (credit, debit,banks transferences, mercadopago account)\n- Customizable\n- Multiple validations, from payments to the identity of the buyer\n\n",
+    "techs": ["typescript", "nodejs", "mercadopago", "express", "mongodb"],
+    "labels": ["backend", "nodejs", "ecommerce"],
+    "repositoryLink": "https://github.com/davc93/mercadopago-server-typescript",
+    "webAppLink": "",
+    "images": []
   },
   {
-    id:3,
-    envLink: "https://doctorcasanova.cl/",
-    featureImage:
-      "https://firebasestorage.googleapis.com/v0/b/davc93.appspot.com/o/featuresImages%2Fthumb_doctorcasanova.jpg?alt=media&token=9af8d027-94e4-4952-8391-12d071c14907",
-    description:
-      'The following website is a landing page that was build with plain HTML and CSS, includes Google tools for SEO and metrics like Analytics, Search console, Tag Manager.\n\nThe purpose of the website is caught users by the search doctor at home or "Doctor a domicilio"',
-    name: "Doctor Casanova",
-    repoLink: "https://github.com/davc93/DoctorCasanova",
-    techs: [
-      {
-        name: "css3",
-      },
-      {
-        name: "html5",
-      },
+    "id": 3,
+    "title": "NodeJS Clean Architecture Backend",
+    "description": "# NodeJS Clean Architecture Backend\n\nThis architecture is used in most of my projects made in NodeJS, it separates the network, controller and store logic to have versatility when integrating different database engines and services such as emails, authentication, special middlewares, etc...\n",
+    "techs": [
+      "nodejs",
+      "mongodb",
+      "postgresql",
+      "typescript",
+      "docker",
+      "express"
     ],
+    "labels": ["backend", "nodejs"],
+    "repositoryLink": "https://github.com/davc93/my-nodejs-backend",
+    "webAppLink": "",
+    "images": []
   },
   {
-    id:4,
-    envLink: "",
-    description:
-      'The following project is a server to receive payments with credit card, debit card, mercado pago account even cash and bank transfer, this project was created to my "checkout pro" certification and this version includes typescript and clean architecture for the backend.',
-    techs: [
-      {
-        name: "typescript",
-      },
-      {
-        name: "nodejs",
-      },
-      {
-        name: "express",
-      },
+    "id": 4,
+    "title": "Doctor Casanova Landing page",
+    "description": "# Doctor Casanova Landing page\n\nThe following project is a landing page made only in html and css and deployed in netlify,\nIt has SEO and analytical services (Google Analytics 4, Google Search Console, Google Tag Manager), the goal of this page is offer the home medicine services of Doctor Casanova in the city of La Serena in Chile",
+    "techs": [
+      "html5","css3","javascript",
+      "netlify",
+      "webpack",
+      "google-tag-manager",
+      "google-analytics"
     ],
-    featureImage:
-      "https://firebasestorage.googleapis.com/v0/b/davc93.appspot.com/o/featuresImages%2Fthumb_mercadopago-server.png?alt=media&token=ea131dc3-6f2a-44f2-becd-defa8edf2ba8",
-    repoLink: "https://github.com/davc93/mercadopago-server-typescript",
-    name: "Mercado Pago Server",
-  },
-  {
-    id:5,
-    envLink: "https://yard-sales-9043f.firebaseapp.com/",
-    description:
-      "Welcome to yard sales, an incredible online store where you can find the most beautiful things. The following project is based on the platzi yard-sales project for the feedback challenge",
-    repoLink: "https://github.com/davc93/yard-sales",
-    featureImage:
-      "https://firebasestorage.googleapis.com/v0/b/davc93.appspot.com/o/featuresImages%2Fthumb_yard-sales.png?alt=media&token=d883249d-c56c-4377-883a-bfbda4d7b7d5",
-    name: "Yard Sales",
-    techs: [
-      {
-        name: "javascript",
-      },
-      {
-        name: "css3",
-      },
-      {
-        name: "html5",
-      },
-      {
-        name: "firebase",
-      },
-    ],
-  },
-];
+    "labels": ["frontend", "vanilla"],
+    "repositoryLink": "https://github.com/davc93/vanilla-doctorcasanova",
+    "webAppLink": "https://doctorcasanova.cl",
+    "images": [
+      "https://res.cloudinary.com/dxryc5jgr/image/upload/v1673050166/davc93/projects/images/4-doctor-casanova_android-small.jpg",
+      "https://res.cloudinary.com/dxryc5jgr/image/upload/v1673050168/davc93/projects/images/4-doctor-casanova_desktop-large.jpg",
+      "https://res.cloudinary.com/dxryc5jgr/image/upload/v1673050168/davc93/projects/images/4-doctor-casanova_ios.jpg",
+      "https://res.cloudinary.com/dxryc5jgr/image/upload/v1673050169/davc93/projects/images/4-doctor-casanova_desktop-small.jpg",
+      "https://res.cloudinary.com/dxryc5jgr/image/upload/v1673050165/davc93/projects/images/4-doctor-casanova_android-large.jpg"
+    ]
+  }
+]
 
 export default {
   services,
