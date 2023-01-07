@@ -32,7 +32,7 @@ const projects = [
     "techs": ["firebase", "nodejs", "express"],
     "labels": ["backend", "nodejs", "firebase"],
     "repositoryLink": "https://github.com/davc93/firebase-auth-middleware-for-nodejs",
-    "webAppLink": "",
+    "webAppLink": null,
     "images": [],
     "slug": "nodejs-backend-with-firebase-auth"
   },
@@ -44,7 +44,7 @@ const projects = [
     "techs": ["typescript", "nodejs", "mercadopago", "express", "mongodb"],
     "labels": ["backend", "nodejs", "ecommerce"],
     "repositoryLink": "https://github.com/davc93/mercadopago-server-typescript",
-    "webAppLink": "",
+    "webAppLink": null,
     "images": [],
     "slug": "mercadopago-nodejs-server-with-typescript"
   },
@@ -63,7 +63,7 @@ const projects = [
     ],
     "labels": ["backend", "nodejs"],
     "repositoryLink": "https://github.com/davc93/my-nodejs-backend",
-    "webAppLink": "",
+    "webAppLink": null,
     "images": [],
     "slug": "nodejs-clean-architecture-backend"
   },
