@@ -11,7 +11,7 @@ export const ProjectDetail = ({ title, description, images, repositoryLink, webA
             <Markdown>{description}</Markdown>
           </div>
 
-          <div className="techs flex mt-8 gap-4">
+          <div className="techs mt-8 gap-4 grid grid-cols-3 md:grid-cols-6">
             {techs.map((tech) => {
 
               if(tech.includes('-')){
@@ -19,7 +19,7 @@ export const ProjectDetail = ({ title, description, images, repositoryLink, webA
                 return (
                   <div key={tech} className='card--tech-project-detail'>
                   <img className='w-14 h-14' src={`/techs/${tech}.svg`} alt={tech} />
-                  <span className='capitalize'>{splited}</span>
+                  <span className='capitalize text-center'>{splited}</span>
                 </div>
                 )
               } else {

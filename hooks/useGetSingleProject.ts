@@ -8,7 +8,6 @@ export const useGetSingleProject = (slug:any) => {
         
             const response = await fetch(`/api/projects/${slug}`)
             const data = await response.json()
-            console.log(data);
             
             setProject(data)
         }
