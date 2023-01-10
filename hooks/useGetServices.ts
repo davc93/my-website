@@ -9,7 +9,7 @@ export const useGetProducts = () => {
             setProducts(data)
         }
         getProductList()
-    })
+    },[])
 
     return {
         products

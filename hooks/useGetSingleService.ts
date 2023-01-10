@@ -22,7 +22,7 @@ export const useGetSingleService = (id:any) => {
         }
 
         getSingleService()
-    })
+    },[])
     return service
 
 };

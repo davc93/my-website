@@ -13,7 +13,7 @@ export const useGetSingleProject = (slug:any) => {
         }
 
         getSingleProject()
-    })
+    },[])
     return project
 
 };

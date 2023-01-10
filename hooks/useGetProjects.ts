@@ -9,7 +9,7 @@ export const useGetProjects = () => {
             setProjects(data)
         }
         getProductList()
-    })
+    },[])
 
     return {
         projects
